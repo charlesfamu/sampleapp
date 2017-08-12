@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      My App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Hello, my name is {{ name }}!</h1>
+  <p>
+    I work as a software engineer @ a company called Lab49 in Washington, DC.
+    I attended <span style="color: green;"><strong>Florida A&</strong></span><span style="color: orange;"><strong>M University</strong></span> and Georgia Tech. I'm originally from Aurora,
+    Colorado and I've lived in DC for the past 5 years. Swipe below to see some
+    things I'm interested in.
+  </p>
+  <ion-slides pager class="slide-height">
+    <ion-slide *ngFor="let slide of slides">
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+      <img [src]="slide.image" class="slide-image" />
+    </ion-slide>
+  </ion-slides>
+</ion-content>
