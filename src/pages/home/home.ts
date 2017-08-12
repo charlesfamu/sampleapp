@@ -7,24 +7,24 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
   private slides: Array<Object>;
-  private name: string = 'Charles';
+  private name: string = 'Ibrahim';
 
   constructor(public navCtrl: NavController) {
     this.slides = [
       {
-        title: 'Sports',
-        description: 'I like to play and watch sports.',
-        image: 'assets/images/sports.png'
+        title: 'cool basketball player',
+        description: 'kevin durant left thunder for the warriors I mean I like KD but not golden state.',
+        image: 'assets/images/kevin-durant.jpg'
       },
       {
-        title: 'Traveling',
-        description: 'I like to travel. I\'ve been to many countries',
-        image: 'assets/images/traveling.jpg'
+        title: 'anime drawing',
+        description: 'I like to to draw anime and animation.',
+        image: 'assets/images/gaara.jpg'
       },
       {
-        title: 'Programming',
-        description: 'I like to program. I built the application Little Math Genius.',
-        image: 'assets/images/littlemathgenius.png'
+        title: 'food',
+        description: 'I like food because to be honest who doesn\'t like food. HA HA I got you there',
+        image: 'assets/images/apple-turnover.jpg'
       }
     ]
   }
